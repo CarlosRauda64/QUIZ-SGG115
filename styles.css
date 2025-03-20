@@ -4,32 +4,51 @@ body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* Base font size for REM calculations */
 }
 
 .quiz-container {
-    max-width: 600px;
-    margin: 80px auto;
+    max-width: 37.5rem;
+    /* 600px / 16 */
+    margin: 5rem;
+    /* 80px / 16 */
     background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    padding: 40px;
+    border-radius: 0.75rem;
+    /* 12px / 16 */
+    box-shadow: 0 0.375rem 1.25rem rgba(0, 0, 0, 0.1);
+    /* 6px / 16 and 20px / 16 */
+    padding: 2.5rem;
+    /* 40px / 16 */
 }
 
 .quiz-container h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
+    /* 24px / 16 */
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
+    /* 30px / 16 */
     text-align: center;
 }
 
 .option {
     background-color: #f9f9f9;
-    border: 2px solid #eaeaea;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
+    border: 0.125rem solid #eaeaea;
+    /* 2px / 16 */
+    border-radius: 0.5rem;
+    /* 8px / 16 */
+    padding: 0.9375rem;
+    /* 15px / 16 */
+    margin-bottom: 0.9375rem;
+    /* 15px / 16 */
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
+    font-size: 1.4rem;
 }
 
 .option:hover {
@@ -58,11 +77,15 @@ body {
     background-color: #1890ff;
     color: #ffffff;
     border: none;
-    padding: 14px 28px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 0.875rem 1.75rem;
+    /* 14px / 16 and 28px / 16 */
+    font-size: 1.5rem;
+    /* 16px / 16 */
+    border-radius: 0.5rem;
+    /* 8px / 16 */
     cursor: pointer;
-    margin: 30px auto 0;
+    margin: 1.875rem auto 0;
+    /* 30px / 16 */
     transition: background-color 0.3s;
 }
 
@@ -76,34 +99,45 @@ body {
 
 .completed-message {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
+    /* 24px / 16 */
     color: #52c41a;
 }
 
-.reps-remaining, .questions-remaining {
-    font-size: 16px;
+.reps-remaining,
+.questions-remaining {
+    font-size: 1rem;
+    /* 16px / 16 */
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+    /* 10px / 16 */
     text-align: center;
 }
 
 /* Estilo para la respuesta correcta */
 .correct-answer {
-    font-size: 18px;
+    font-size: 1.125rem;
+    /* 18px / 16 */
     color: #333;
-    margin-top: 20px;
+    margin-top: 1.25rem;
+    /* 20px / 16 */
     text-align: center;
 }
 
 /* Estilo para el bloque de Contexto */
 .context-info {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 1.25rem;
+    /* 20px / 16 */
+    padding: 0.9375rem;
+    /* 15px / 16 */
     background-color: #e8f4ff;
-    border-left: 4px solid #1890ff;
-    font-size: 16px;
+    border-left: 0.25rem solid #1890ff;
+    /* 4px / 16 */
+    font-size: 1.3rem;
+    /* 16px / 16 */
     color: #333;
-    border-radius: 4px;
+    border-radius: 0.25rem;
+    /* 4px / 16 */
 }
 
 /* Estilo para los indicadores de teclas en opciones y botón */
@@ -112,17 +146,22 @@ body {
     background-color: #e0e0e0;
     color: #333;
     font-weight: bold;
-    border-radius: 4px;
-    padding: 4px 8px;
-    margin-right: 10px;
-    font-size: 14px;
+    border-radius: 0.25rem;
+    /* 4px / 16 */
+    padding: 0.25rem 0.5rem;
+    /* 4px / 16 and 8px / 16 */
+    margin-right: 0.625rem;
+    /* 10px / 16 */
+    font-size: 0.875rem;
+    /* 14px / 16 */
     vertical-align: middle;
 }
 
 /* Estilo específico para la representación de la barra espaciadora */
 .key-indicator.space {
     font-family: monospace;
-    padding: 4px 12px;
+    padding: 0.25rem 0.75rem;
+    /* 4px / 16 and 12px / 16 */
 }
 
 /* Opcional: Ajustar la alineación del texto dentro de las opciones */
@@ -135,15 +174,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Separación entre el icono y el texto */
+    gap: 0.625rem;
+    /* 10px / 16 */
     background-color: #1890ff;
     color: #ffffff;
     border: none;
-    padding: 14px 28px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 0.875rem 1.75rem;
+    /* 14px / 16 and 28px / 16 */
+    font-size: 1.5rem;
+    /* 16px / 16 */
+    border-radius: 0.5rem;
+    /* 8px / 16 */
     cursor: pointer;
-    margin: 30px auto 0;
+    margin: 1.875rem auto 0;
+    /* 30px / 16 */
     transition: background-color 0.3s;
 }
 
@@ -151,15 +195,14 @@ body {
     background-color: #40a9ff;
 }
 
-
 /* Estilos para el contenedor de botones de progreso */
 #progress-buttons {
-    position: fixed;
-    top: 10px;
-    right: 10px;
     display: flex;
-    gap: 10px;
-    z-index: 1000;
+    justify-content: center;
+    padding: 1.25rem;
+    /* 20px / 16 */
+    gap: 0.625rem;
+    /* 10px / 16 */
 }
 
 /* Estilos para los botones de progreso */
@@ -167,13 +210,49 @@ body {
     background-color: #1890ff;
     color: #ffffff;
     border: none;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    /* 8px / 16 and 12px / 16 */
+    font-size: 1.5rem;
+    /* 14px / 16 */
+    border-radius: 0.25rem;
+    /* 4px / 16 */
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #progress-buttons button:hover {
     background-color: #40a9ff;
+}
+
+#forget-button {
+    background-color: #ff4d4f;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    /* 8px / 16 and 12px / 16 */
+    font-size: 1.5rem;
+    /* 14px / 16 */
+    border-radius: 0.25rem;
+    /* 4px / 16 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 12px; /* Reduce el tamaño base, haciendo que 1rem sea 14px */
+    }
+}
+
+/* Para tablets (entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 14px; /* Un tamaño intermedio */
+    }
+}
+
+/* Para pantallas grandes (1024px en adelante) */
+@media (min-width: 1024px) {
+    html {
+        font-size: 16px; /* Aumenta la escala general */
+    }
 }
